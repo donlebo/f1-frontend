@@ -1,0 +1,19 @@
+.logo {
+    width: 250px;
+}
+
+.logo1 {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.menu {
+    text-align: center;
+}
+
+.home-button {
+    margin-top: 5px;
+    width: 300px;
+}

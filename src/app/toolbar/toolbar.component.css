@@ -1,0 +1,11 @@
+.spacer {
+    flex: 1 1 auto;
+  }
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    font-size: x-small ;
+    display: flex;
+    justify-content: center;
+}

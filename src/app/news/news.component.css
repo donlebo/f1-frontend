@@ -1,0 +1,44 @@
+.card {
+  max-width: 400px;
+  transition: 0.3s;
+  color: white;
+  text-align:start;
+  margin: 30px ;
+  box-shadow: 5px 4px 8px -3px rgb(255, 0, 0);
+  background-color: transparent;
+}
+
+.container{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 5px 4px 8px -3px rgb(0, 255, 13);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: whitesmoke;
+}
+
+a:link {
+  color: whitesmoke;
+}
+
+.home-button {
+  margin: 10px;
+}
+
+.d {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

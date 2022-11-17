@@ -3,9 +3,21 @@
   }
 
 .footer {
-    position: fixed;
-    bottom: 0;
-    font-size: x-small ;
-    display: flex;
-    justify-content: center;
+  position: absolute;
+  bottom: 0;
+  font-size: xx-small;
+  display: flex;
+  justify-content: center;
+  left: 0;
+}
+
+.title {
+  text-align: center;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    width: 100%;
+  }
 }

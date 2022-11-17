@@ -1,1 +1,25 @@
-<p>races works!</p>
+<div class="d" style="background-color: red;">
+  <img src="./assets/img/races3.jpeg" class="imgStand" style="width: 575px; box-shadow: 0 20px 20px;" alt="">
+  <table mat-table [dataSource]="races" class="mat-elevation-z8 standing">
+    <ng-container matColumnDef="RaceName">
+      <th mat-header-cell *matHeaderCellDef style="font-size: 20px; width: 20%; text-align: center; color: whitesmoke;"> Race name </th>
+      <td mat-cell style="font-size: 18px; text-align: center; color: whitesmoke;" *matCellDef="let element; let i = index" [routerLink]="['races', + element.round, 'details']">
+        {{i + 1}}
+      </td>
+    </ng-container>
+    <ng-container matColumnDef="Round">
+      <th mat-header-cell *matHeaderCellDef style="font-size: 20px; width: 20%; text-align: center; color: whitesmoke;">Round </th>
+      <td mat-cell style="font-size: 18px; text-align: center; color: whitesmoke;" *matCellDef="let element; let i = index" [routerLink]="['races', + element.round, 'details']">
+        {{element.raceName}}
+      </td>
+    </ng-container>
+    <ng-container matColumnDef="LearnMore">
+      <th mat-header-cell *matHeaderCellDef style="font-size: 20px; width: 20%; text-align: center; color: whitesmoke;">Learn more </th>
+      <td mat-cell style="font-size: 18px; text-align: center; color: whitesmoke;" *matCellDef="let element; let i = index" [routerLink]="['races', + element.round, 'details']">
+        <mat-icon>info</mat-icon>
+      </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+    <tr mat-row *matRowDef="let row; columns: columnsToDisplay;"></tr>
+  </table>
+</div>

@@ -1,0 +1,20 @@
+
+<div class="d" style="background-color: grey;">
+  <table mat-table [dataSource]="constructors" class="mat-elevation-z8 standing">
+    <ng-container matColumnDef="Constructor">
+      <th mat-header-cell *matHeaderCellDef style="font-size: 20px; width: 20%; text-align: center; color: whitesmoke;"> Builders </th>
+      <td mat-cell style="font-size: 18px; text-align: center; color: whitesmoke;" *matCellDef="let element; let i = index">
+        {{element.constructor}}
+      </td>
+    </ng-container>
+    <ng-container matColumnDef="ConstructorNationality">
+      <th mat-header-cell *matHeaderCellDef style="font-size: 20px; width: 20%; text-align: center; color: whitesmoke;">Nationality </th>
+      <td mat-cell style="font-size: 18px; text-align: center; color: whitesmoke;" *matCellDef="let element; let i = index">
+        {{element.constructorNationality}}
+      </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+    <tr mat-row *matRowDef="let row; columns: columnsToDisplay;"></tr>
+  </table>
+  <img src="./assets/img/builders.jpeg" class="imgStand" style="width: 575px; box-shadow: 0 20px 20px;" alt="">
+</div>

@@ -1,0 +1,35 @@
+.main-div{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  justify-content: space-around;
+}
+table {
+  width: 100%;
+  box-shadow: 0 20px 20px;
+}
+.d {
+  width: 100%;
+}
+@media screen and (max-width: 979px) {
+  .imgStand {
+      display: none;
+  }
+  .footer {
+    display: none;
+  }
+}
+@media all and (min-width: 980px) {
+.d {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: space-around;
+}
+table {
+  width: 50%;
+}
+}

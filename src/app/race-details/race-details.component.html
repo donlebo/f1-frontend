@@ -1,0 +1,41 @@
+
+<div class="d">
+  <div style="text-align: center;" class="imgStand">
+    <img mat-card-image src="assets/img/gifgl.gif" style="width: 300px;" alt="Photo of a Driver">
+  </div>
+
+  <div class="card">
+    <h1>{{results?.raceName}} Grand Prix</h1>
+    <img src={{results1}} alt="{{results?.raceName}} img" style="width:100%;">
+    <div class="container">
+      <p>
+        Race country: {{results?.circuitCountry}}
+      </p>
+      <p>
+        Circuit: {{results?.raceCircuit}}
+      </p>
+      <p>
+        {{results?.raceDate}} Round: {{results?.round}} <br> Season: {{results?.season}}
+      </p>
+      <p>
+        Fastest lap: {{results?.fastestLaps}}
+      </p>
+      <p>Best time:</p>
+      <h1 style="color: red; font-size: 40px;">{{results?.fastestLapsSpeed}}0.00</h1>
+      <p>
+        Average laps time: {{results?.averageLapsTime}}0.00
+      </p>
+      <p style="color: green">
+        Status: {{results?.status}}
+      </p>
+    </div>
+  </div>
+
+
+  <div style="text-align: center;" class="imgStand">
+    <img mat-card-image src="assets/img/gifsc.gif" style="width: 300px;" alt="Photo of a Driver">
+  </div>
+
+</div>
+
+

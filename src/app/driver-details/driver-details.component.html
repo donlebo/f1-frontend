@@ -1,0 +1,25 @@
+<div class="d">
+  <div style="text-align: center;" class="imgStand">
+    <img mat-card-image src="assets/img/gifrace1.gif" style="width: 300px; margin: 15px;" alt="Photo of a Driver">
+  </div>
+<div class="card">
+  <h1> {{results?.name}} {{results?.surname}}</h1>
+  <img src={{results1}} alt="{{results?.name}} img" style="width:100%">
+  <div class="container">
+    <p>{{results?.driverName}} {{results?.raceCode}} / {{results?.nationality}}</p>
+    <p>Current points: {{results?.points}}</p>
+    <p>Wins in this season: {{results?.wins}}</p>
+    <p>Final position in the last race: {{results?.finalPosition}}</p>
+    <p>Compete for: {{results?.constructor}}</p>
+    <p>{{results?.constructor}} nationality: {{results?.constructorNationality}}</p>
+    <div>
+      <button button mat-flat-button style="background-color: red;" class="home-button"><a href="{{results?.learnMoreOnDriver}}" target="_blank">Learn more on driver</a></button>
+      <button button button mat-flat-button style="background-color: red;" class="home-button"><a href="{{results?.learnMoreOnConstructor}}" target="_blank">Learn more on constructor</a></button>
+    </div>
+  </div>
+</div>
+  <div style="text-align: center;" class="imgStand">
+    <img mat-card-image src="assets/img/gifrace.gif" style="width: 300px; margin: 15px;" alt="Photo of a Driver">
+  </div>
+</div>
+

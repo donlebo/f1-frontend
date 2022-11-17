@@ -1,19 +1,60 @@
 .logo {
-    width: 250px;
+    width: 300px;
 }
 
 .logo1 {
-    margin-top: 150px;
     display: flex;
     justify-content: center;
-    margin-bottom: 40px;
 }
 
 .menu {
     text-align: center;
+    align-items: center;
 }
 
 .home-button {
-    margin-top: 5px;
+    margin-top: 15px;
     width: 300px;
+}
+
+.home-button:hover{
+  transform: scale(1.2);
+}
+
+.main-div{
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20%;
+  padding-right: 20%;
+  height: 100%;
+  width: 100%;
+}
+
+.d {
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:link {
+  color: rgb(255, 255, 255);
+}
+
+/* visited link */
+a:visited {
+  color: rgb(255, 255, 255);
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(255, 255, 255);
+}
+
+/* selected link */
+a:active {
+  color: rgb(255, 255, 255);
 }

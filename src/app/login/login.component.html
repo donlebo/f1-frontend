@@ -1,0 +1,17 @@
+<form (ngSubmit)="send()" [formGroup]="form" style="border:1px #ccc">
+  <div class="container">
+    <div class="logo1">
+      <img class="logo" src="assets/img/giflogo5.webp" alt="">
+    </div>
+    <p style="text-align: center;">Please fill in this form to acess to your account.</p>
+    <hr>
+    <label for="username"><b>Username</b></label>
+    <input autocapitalize="none" type="text" placeholder="Enter your username" name="username" formControlName="username" required>
+    <label for="password"><b>Password</b></label>
+    <input autocapitalize="none" type="password" placeholder="Enter password" name="psw" formControlName="password" required>
+    <p>If you don't have an account <a href="/signup" style="color:rgb(255, 0, 0)">sign up </a>here.</p>
+    <div class="clearfix">
+      <button type="submit" class="signupbtn">Log in</button>
+    </div>
+  </div>
+</form>

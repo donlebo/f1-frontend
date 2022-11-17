@@ -1,0 +1,61 @@
+.main-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 5px 4px 8px -3px rgba(206, 182, 2, 0.62);
+  transition: 0.3s;
+  margin-top: 40px;
+  margin-left: 35px;
+  margin-right: 35px;
+  max-width: 400px;
+  color: white;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 5px 4px 8px -3px rgba(0, 255, 13, 0.2);
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: whitesmoke;
+}
+a:link {
+  color: whitesmoke;
+}
+.home-button {
+  margin: 10px;
+}
+.d {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding: 2px 16px;
+  text-align: center;
+}
+@media screen and (max-width: 1023px) {
+  .imgStand {
+      display: none;
+  }
+  .footer {
+    display: none;
+  }
+}
+@media all and (min-width: 1024px) {
+  .d {
+    display: flex;
+    justify-content: center;
+  }
+  table {
+    width: 50%;
+  }
+}

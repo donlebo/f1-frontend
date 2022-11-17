@@ -1,24 +1,12 @@
-<mat-toolbar color="secondary">
-    <button mat-button [matMenuTriggerFor]="menu"><mat-icon>dehaze</mat-icon></button>
-        <mat-menu #menu="matMenu">
-            <button mat-menu-item routerLink="">Home</button>
-            <button mat-menu-item routerLink="standing">Standing</button>
-            <button mat-menu-item routerLink="">Drivers</button>
-            <button mat-menu-item routerLink="races">Races</button>
-            <button mat-menu-item routerLink="extra">Extra</button>
-        </mat-menu>
+<mat-toolbar color="secondary" class="navbar">
+    <button mat-button (click)="backClicked()"><i class="material-icons">arrow_back</i></button>
     <div class="title">
         <span>F1 current season</span>
     </div>
     <span class="spacer"></span>
-    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-        <mat-icon>favorite</mat-icon>
-    </button>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-        <mat-icon>account_circle</mat-icon>
-    </button>
+    <div>
+      <img src="assets/img/navbarlogo.png" alt="" style="max-width: 80px;">
+    </div>
 </mat-toolbar>
 
-<mat-toolbar class="footer">
-    <span>Copyright: Donato Bello - Frontend developer. Stay tuned for the next season</span>
-  </mat-toolbar>
+

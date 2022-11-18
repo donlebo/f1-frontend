@@ -21,6 +21,4 @@ export class StandingComponent implements OnInit {
     this.drivers = (await this.resultService.getDriver());
     console.log(this.drivers);
   }
-
-
 }

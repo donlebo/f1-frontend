@@ -1,6 +1,8 @@
 <div class="d">
-  <div class="container">
-    <div class="row">
+  <div class="row">
+    <div class="column">
+
+
       <mat-card *ngFor='let article of articles' class="card">
         <div>
           <mat-card-subtitle style="color: rgb(0, 255, 13);">From {{article?.source.name}} <br> at {{article?.publishedAt}}</mat-card-subtitle>

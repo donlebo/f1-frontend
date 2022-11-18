@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit {
     } else if ((this.now == 12) || ((this.now > 12) && (this.now < 18))) {
       this.message = "Good afternoon " + this.username
     } else if ((this.now == 18) || (this.now > 18)){
-      this.message = "Good nigth " + this.username
+      this.message = "Good night " + this.username
     }
 
   }

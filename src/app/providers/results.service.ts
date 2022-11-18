@@ -85,18 +85,15 @@ export class ResultsService {
   }
 
   getConstructor() {
-    return this.http.get<Constructor>('http://localhost:8080/constructor')
-      .toPromise();
+    return this.http.get<Constructor>('http://localhost:8080/constructor').toPromise();
   }
 
   getRaces() {
-    return this.http.get<Race>('http://localhost:8080/race')
-      .toPromise();
+    return this.http.get<Race>('http://localhost:8080/race').toPromise();
   }
 
   getRacesDetails(round: number) {
-    return this.http.get<RaceDetails>(`http://localhost:8080/race/${round}`)
-      .toPromise();
+    return this.http.get<RaceDetails>(`http://localhost:8080/race/${round}`).toPromise();
   }
 
   signUp(user: User) {

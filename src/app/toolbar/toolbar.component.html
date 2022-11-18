@@ -1,3 +1,4 @@
+<div *ngIf="router.url != '/'">
 <mat-toolbar color="secondary" class="navbar">
     <button mat-button (click)="backClicked()"><i class="material-icons">arrow_back</i></button>
     <div class="title">
@@ -8,5 +9,7 @@
       <img src="assets/img/navbarlogo.png" alt="" style="max-width: 80px;">
     </div>
 </mat-toolbar>
+</div>
+
 
 

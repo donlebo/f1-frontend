@@ -1,56 +1,25 @@
-
-<!-- <div class="main-div" style="background-color: black;">
-  <table mat-table [dataSource]="drivers" class="mat-elevation-z8 standing">
-    <ng-container matColumnDef="Position">
-      <th mat-header-cell *matHeaderCellDef style="font-size: 20px; width: 20%; text-align: center; color: whitesmoke;"> Position </th>
-      <td mat-cell style="font-size: 18px; text-align: center; color: whitesmoke;" *matCellDef="let element; let i = index" [routerLink]="['driver', + element.id, 'details']">
-        {{i + 1}}
-      </td>
-    </ng-container>
-    <ng-container matColumnDef="DriverName">
-      <th mat-header-cell *matHeaderCellDef style="font-size: 20px; width: 20%; text-align: center; color: whitesmoke;">Driver name </th>
-      <td mat-cell style="font-size: 18px; text-align: center; color: whitesmoke;" *matCellDef="let element; let i = index" [routerLink]="['driver', + element.id, 'details']">
-        {{element.driverName}} {{element.driverSurname}}
-      </td>
-    </ng-container>
-    <ng-container matColumnDef="LearnMore">
-      <th mat-header-cell *matHeaderCellDef style="font-size: 20px; width: 20%; text-align: center; color: whitesmoke;">Learn more</th>
-      <td mat-cell style="font-size: 18px; text-align: center; color: whitesmoke;" *matCellDef="let element; let i = index" [routerLink]="['driver', + element.id, 'details']">
-        <mat-icon>info</mat-icon>
-      </td>
-    </ng-container>
-    <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
-    <tr mat-row *matRowDef="let row; columns: columnsToDisplay;"></tr>
-</table>
-  <img src="./assets/img/standing.jpeg" style="width: 575px;" alt="">
-</div>
-
-
- -->
-
- <div class="d" style="background-color: black;">
-  <table mat-table [dataSource]="drivers" class="mat-elevation-z8 standing">
-    <ng-container matColumnDef="Position">
-      <th mat-header-cell *matHeaderCellDef style="font-size: 20px; width: 20%; text-align: center; color: whitesmoke;"> Position </th>
-      <td mat-cell style="font-size: 18px; text-align: center; color: whitesmoke;" *matCellDef="let element; let i = index" [routerLink]="['driver', + element.id, 'details']">
-        {{i + 1}}
-      </td>
-    </ng-container>
-    <ng-container matColumnDef="DriverName">
-      <th mat-header-cell *matHeaderCellDef style="font-size: 20px; width: 20%; text-align: center; color: whitesmoke;">Driver name </th>
-      <td mat-cell style="font-size: 18px; text-align: center; color: whitesmoke;" *matCellDef="let element; let i = index" [routerLink]="['driver', + element.id, 'details']">
-        {{element.driverName}} {{element.driverSurname}}
-      </td>
-    </ng-container>
-    <ng-container matColumnDef="LearnMore">
-      <th mat-header-cell *matHeaderCellDef style="font-size: 20px; width: 20%; text-align: center; color: whitesmoke;">Learn more</th>
-      <td mat-cell style="font-size: 18px; text-align: center; color: whitesmoke;" *matCellDef="let element; let i = index" [routerLink]="['driver', + element.id, 'details']">
-        <mat-icon>info</mat-icon>
-      </td>
-    </ng-container>
-    <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
-    <tr mat-row *matRowDef="let row; columns: columnsToDisplay;"></tr>
-</table>
-<img src="./assets/img/standing.jpeg" class="imgStand" style="width: 575px;" alt="">
-
+<div class="d" style="background-color: black;">
+    <table mat-table [dataSource]="drivers" class="mat-elevation-z8 standing">
+      <ng-container matColumnDef="Position">
+        <th mat-header-cell *matHeaderCellDef style="font-size: 20px; width: 20%; text-align: center; color: whitesmoke;"> Position </th>
+        <td mat-cell style="font-size: 18px; text-align: center; color: whitesmoke;" *matCellDef="let element; let i = index" [routerLink]="['driver', + element.id, 'details']">
+          {{i + 1}}
+        </td>
+      </ng-container>
+      <ng-container matColumnDef="DriverName">
+        <th mat-header-cell *matHeaderCellDef style="font-size: 20px; width: 20%; text-align: center; color: whitesmoke;">Driver name </th>
+        <td mat-cell style="font-size: 18px; text-align: center; color: whitesmoke;" *matCellDef="let element; let i = index" [routerLink]="['driver', + element.id, 'details']">
+          {{element.driverName}} {{element.driverSurname}}
+        </td>
+      </ng-container>
+      <ng-container matColumnDef="LearnMore">
+        <th mat-header-cell *matHeaderCellDef style="font-size: 20px; width: 20%; text-align: center; color: whitesmoke;">Learn more</th>
+        <td mat-cell style="font-size: 18px; text-align: center; color: whitesmoke;" *matCellDef="let element; let i = index" [routerLink]="['driver', + element.id, 'details']">
+          <mat-icon>info</mat-icon>
+        </td>
+      </ng-container>
+      <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+      <tr mat-row *matRowDef="let row; columns: columnsToDisplay;"></tr>
+  </table>
+  <img src="./assets/img/standing.jpeg" class="imgStand" style="width: 575px;" alt="">
 </div>

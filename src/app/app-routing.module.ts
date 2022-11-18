@@ -20,7 +20,6 @@ const routes: Routes = [
   {path:'home/constructors', component : ConstructorsComponent},
   {path:'home/news', component : NewsComponent},
   {path:'signup', component : SignupComponent},
-  {path:'login', component : LoginComponent}
 ];
 
 @NgModule({

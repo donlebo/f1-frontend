@@ -16,5 +16,4 @@ export class ToolbarComponent implements OnInit {
   backClicked() {
     this._location.back();
   }
-
 }

@@ -1,14 +1,19 @@
 <div *ngIf="router.url != '/'">
-<mat-toolbar color="secondary" class="navbar">
-    <button mat-button (click)="backClicked()"><i class="material-icons">arrow_back</i></button>
-    <div class="title">
-        <span>F1 current season</span>
-    </div>
-    <span class="spacer"></span>
-    <div>
-      <img src="assets/img/navbarlogo.png" alt="" style="max-width: 80px;">
-    </div>
-</mat-toolbar>
+    <mat-toolbar color="secondary" class="navbar">
+      <button *ngIf="router.url != '/home'" mat-button (click)="backClicked()"><i class="material-icons">arrow_back</i></button>
+      <div class="title">
+          <span *ngIf="router.url == '/signup'">Back to login</span>
+          <span *ngIf="router.url == '/home'">Welcome to F1</span>
+          <span *ngIf="router.url == '/home/standing'">Standing & driver</span>
+          <span *ngIf="router.url == '/home/races'">Races & details</span>
+          <span *ngIf="router.url == '/home/constructors'">Constructors</span>
+          <span *ngIf="router.url == '/home/news'">Last news</span>
+      </div>
+      <span class="spacer"></span>
+      <div>
+        <img src="assets/img/navbarlogo.png" alt="" style="max-width: 80px; margin-left: 15px;">
+      </div>
+    </mat-toolbar>
 </div>
 
 

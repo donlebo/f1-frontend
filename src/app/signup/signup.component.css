@@ -5,8 +5,7 @@
 
 .logo {
   width: 300px;
-  margin-bottom: -50px;
-  margin-top: -10px;
+  margin-bottom: 30px;
 }
 
 .logo1 {
@@ -129,3 +128,22 @@ button:hover {
   }
 }
 
+.loader{
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -150px;
+}
+
+.logoload {
+  width: 300px;
+}
+
+.logo1load {
+  display: flex;
+  justify-content: center;
+}

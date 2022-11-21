@@ -1,11 +1,14 @@
 * {
   box-sizing: border-box;
   color: white;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .logo {
   width: 300px;
-  margin-bottom: 20px;
+  margin-top: 75px;
+  margin-bottom: 75px;
 }
 
 .logo1 {
@@ -82,6 +85,7 @@ button:hover {
   .logo {
     margin-top: 20px;
   }
+
 }
 
 @media all and (min-width: 481px) and (max-width: 736px) {
@@ -125,5 +129,27 @@ button:hover {
   .logo {
     width: 350px;
   }
+
 }
 
+.loader{
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoloader {
+  width: 350px;
+}
+
+.logo1 {
+  display: flex;
+  justify-content: center;
+}
+.eyes {
+  display: flex;
+}

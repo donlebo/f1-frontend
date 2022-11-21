@@ -1,6 +1,6 @@
 <div class="d" style="background-color: red;">
   <img src="./assets/img/races3.jpeg" class="imgStand" style="width: 575px; box-shadow: 0 20px 20px;" alt="">
-  <table mat-table [dataSource]="races" class="mat-elevation-z8 standing">
+  <table style="cursor: pointer;" mat-table [dataSource]="races" class="mat-elevation-z8 standing">
     <ng-container matColumnDef="RaceName">
       <th mat-header-cell *matHeaderCellDef style="font-size: 20px; width: 20%; text-align: center; color: whitesmoke;"> Race name </th>
       <td mat-cell style="font-size: 18px; text-align: center; color: whitesmoke;" *matCellDef="let element; let i = index" [routerLink]="['races', + element.round, 'details']">
@@ -20,6 +20,6 @@
       </td>
     </ng-container>
     <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
-    <tr mat-row *matRowDef="let row; columns: columnsToDisplay;"></tr>
+    <tr class="passa" mat-row *matRowDef="let row; columns: columnsToDisplay;"></tr>
   </table>
 </div>

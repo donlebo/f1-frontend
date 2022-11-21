@@ -16,6 +16,7 @@ import { FDialogComponent } from '../f-dialog/f-dialog.component';
 export class LoginComponent implements OnInit {
 
   form: FormGroup;
+  show : boolean = false;
 
   constructor(private dialog: MatDialog, public fb: FormBuilder, private router: Router, private resultsService: ResultsService, private cookie:CookieService) {
 
@@ -42,28 +43,44 @@ export class LoginComponent implements OnInit {
   ngOnInit() {};
 
   async send(){
+    this.show=true
     if(!this.form.valid){
-      this.formDialog();
+      setTimeout(()=>{
+        this.show=false
+        this.formDialog();
+      },2000);
       return;
     }
 
     await this.resultsService.login(this.form.value).then(
       async res => {
-        this.setStorage(res);
-        this.cookyesDialog();
-        this.setCookie(res);
-        await this.router.navigate(['/home']);
-        console.log(res);
+        setTimeout(async ()=>{
+          this.show=false
+          this.setStorage(res);
+          this.cookyesDialog();
+          this.setCookie(res);
+          await this.router.navigate(['/home']);
+          console.log(res);
+        },2000)
       }
     ).catch(e => {
+      setTimeout(()=>{
+        this.show=false
         this.errorDialog();
         console.log(e);
+      },2000);
       }
     );
   }
 
+  hide : boolean = true;
+
+myFunction() {
+  this.hide = !this.hide;
+}
+
   setStorage(res : any){
-    localStorage.setItem("token", JSON.stringify(res.token));
+    localStorage.setItem("token", res.token);
   }
 
   setCookie(res : any){

@@ -1,5 +1,5 @@
 <div class="d" style="background-color: black;">
-    <table mat-table [dataSource]="drivers" class="mat-elevation-z8 standing">
+    <table style="cursor: pointer;" mat-table [dataSource]="drivers" class="mat-elevation-z8 standing">
       <ng-container matColumnDef="Position">
         <th mat-header-cell *matHeaderCellDef style="font-size: 20px; width: 20%; text-align: center; color: whitesmoke;"> Position </th>
         <td mat-cell style="font-size: 18px; text-align: center; color: whitesmoke;" *matCellDef="let element; let i = index" [routerLink]="['driver', + element.id, 'details']">
@@ -19,7 +19,7 @@
         </td>
       </ng-container>
       <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
-      <tr mat-row *matRowDef="let row; columns: columnsToDisplay;"></tr>
+      <tr class="passa" mat-row *matRowDef="let row; columns: columnsToDisplay;"></tr>
   </table>
   <img src="./assets/img/standing.jpeg" class="imgStand" style="width: 575px;" alt="">
 </div>

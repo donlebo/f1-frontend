@@ -36,3 +36,7 @@ table {
     width: 50%;
   }
 }
+
+.passa:hover {
+  background-color: red;
+}

@@ -20,15 +20,14 @@ export class HomeComponent implements OnInit {
     this.username = this.cookie.get("username");
 
     if (this.now < 12) {
-      this.message = "Good morning " + this.username
+      this.message = "Good morning " /* + this.username */
     } else if ((this.now == 12) || ((this.now > 12) && (this.now < 18))) {
-      this.message = "Good afternoon " + this.username
+      this.message = "Good afternoon " /* + this.username */
     } else if ((this.now == 18) || (this.now > 18)){
-      this.message = "Good night " + this.username
+      this.message = "Good night " /* + this.username */
     }
 
   }
-
 
   clearSession(){
     localStorage.clear();

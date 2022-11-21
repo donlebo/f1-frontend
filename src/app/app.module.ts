@@ -56,7 +56,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     EDialogComponent,
     FDialogComponent,
     NewsComponent,
-    ExpDialogComponent,
+    ExpDialogComponent
   ],
   entryComponents:[CDialogComponent],
   imports: [

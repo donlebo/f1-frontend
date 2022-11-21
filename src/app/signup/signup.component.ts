@@ -46,7 +46,7 @@ export class SignupComponent implements OnInit {
       console.log(e);
     });
 
-    await this.router.navigate(['/login']);
+    await this.router.navigate(['/']);
     this.cookie.set("name", this.form.value['name']);
     this.cookie.set("email", this.form.value['email']);
     this.cookie.set("username", this.form.value['username']);
